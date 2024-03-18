@@ -5,7 +5,7 @@
 }
 
 .header {
-    min-height: 200px;
+    height: 200px;
     width: 100%;
     background-color: #ea9d3e;
 }
@@ -21,3 +21,34 @@ nav img {
     width: 121px;
 }
 
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 60px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
