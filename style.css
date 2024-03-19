@@ -8,6 +8,7 @@
     height: 200px;
     width: 100%;
     background-color: #ea9d3e;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
 }
 
 nav {
